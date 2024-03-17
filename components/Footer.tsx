@@ -49,7 +49,7 @@ const Footer = () => {
                 <ul className="regular-14 flex gap-4 text-gray-30">
                   {SOCIALS.links.map((link) => (
                     <Link href="/" key={link}>
-                      <Image src={link} alt="logo" width={24} height={24} />
+                      <Image className='hover:bg-green-300 ' src={link} alt="logo" width={24} height={24} />
                     </Link>
                   ))}
                 </ul>
@@ -59,7 +59,8 @@ const Footer = () => {
         </div>
 
         <div className="border bg-gray-20" />
-        <p className="regular-14 w-full text-center text-gray-30">2023 Hilink | All rights reserved</p>
+        <p className="regular-14 w-full text-center text-gray-30">2024 Hilink | All rights reserved <a className='text-black font-bold hover:text-green-600' href="https://github.com/loth381"
+            target="_blank">Avendaño</a></p>
       </div>
     </footer>
   )
